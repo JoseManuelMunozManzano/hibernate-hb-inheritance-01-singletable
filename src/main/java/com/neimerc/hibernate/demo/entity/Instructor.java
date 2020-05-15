@@ -1,8 +1,10 @@
 package com.neimerc.hibernate.demo.entity;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
+@DiscriminatorValue(value = "INSTRUCTOR")
 public class Instructor extends User {
 	
 	private Double salary;
